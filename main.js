@@ -87,7 +87,13 @@ for(let i=0; i<table.length-1;i++){
         let sixes = searchtool(col[6]).text();
         let sr = searchtool(col[7]).text();
         
-        let stats = [name,R,B,fours,sixes,sr];
+        let stats = [{
+            "name" : name,
+            "runs" : R,
+            "balls" : B,
+            "fours" : fours,
+            "sixes" :sixes,
+            "strikerate" : sr}];
         
         
         let jsonstat = JSON.stringify(stats);
